@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiBook</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BiBookCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #487D70;">
+
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="BiBookMainPage.html"><img src="./picture/bibooklogo.png" alt=""></a>
+            </div>
+            
+        </nav>
+    </section>
+
+    <form action="" method="get" id="bookingpage" class="bookingpage">
+        <section class="bookingpage-container1">
+            <p>
+                Silahkan Pilih Tanggal Peminjaman
+            </p>
+        </section>
+
+        <section class="bookingpage-container2">
+            <input type="date"id="datetime" name="datetime">
+            <!-- <div class="picker">
+                <div class="picker-window"></div>
+                <div class="triangle"></div>
+                <ul class="picker-">
+                    <li> BULAN </li>
+                    <li> Januari </li>
+                    <li> Februari </li>
+                    <li> Maret </li>
+                    <li> April </li>
+                    <li> Mei </li>
+                    <li> Juni </li>
+                    <li> Juli </li>
+                    <li> Agustus </li>
+                    <li> September </li>
+                    <li> Oktober</li>
+                    <li> November </li>
+                    <li> Desember </li>
+                    <li></li>
+                </ul>
+                <ul class="picker-date">
+                    <li>TANGGAL</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li></li>
+                </ul>
+                <ul class="picker-year">
+                    <li>TAHUN</li>
+                    <li>2000</li>
+                    <li>2001</li>
+                    <li>2002</li>
+                    <li>2003</li>
+                    <li>2004</li>
+                    <li>2005</li>
+                    <li>2006</li>
+                    <li>2007</li>
+                    <li>2008</li>
+                    <li>2009</li>
+                    <li>2010</li>
+                    <li>2011</li>
+                    <li>2012</li>
+                    <li>2013</li>
+                    <li>2014</li>
+                    <li>2015</li>
+                    <li>2016</li>
+                    <li>2017</li>
+                    <li>2018</li>
+                    <li>2019</li>
+                    <li>2020</li>
+                    <li>2021</li>
+                    <li>2022</li>
+                    <li>2023</li>
+                    <li>2024</li>
+                    <li>2025</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class='button-container'>
+                <button>Pick a date</button>
+            </div> -->
+        </section>
+
+        <section class="bookingpage-container3">
+            <p>Silahkan Pilih Waktu Peminjaman</p>
+        </section>
+
+        <section class="bookingpage-container4">
+            <input type="time" id="timehour" name="timehour">
+            <label for="hour"></label>
+            <select name="languages" id="lang">
+                <option value="1">Durasi</option>
+                <option value="2">4 Jam</option>
+                <option value="3">6 Jam</option>
+            </select>
+        </section>
+
+        <input type="submit" value="Pilih Lantai">
+        <div class="errorbox">
+            <p id="error" class="errorstyle"></p>
+        </div>
+    </form>
+</body>
+
+<div class="hide" id="hide"></div>
+<div class="header-toggle"onclick="toggleMenu(this); toggleBar(this); dark(this)">
+    <div class="bar1" ></div>
+    <div class="bar2"></div>
+    <div class="bar3" ></div>
+</div>  
+<nav class="nav_menu" id="nmenu">
+    <nav class="nav_content">
+        <div class="navi">
+            <ul class="nav_list">
+                <a href="./BiBookMainPage.html"><li class="nav-item">Beranda</li></a>
+                <a href="./BookingPage.html"><li class="nav-item">Pinjam Ruangan</li></a>
+                <a href="./OrderHistoryPage.html"><li class="nav-item">Riwayat Pinjaman</li></a>
+                <a href="./ProfilePage.html"><li class="nav-item">Akun</li></a>
+            </ul>
+        </div>
+        
+    </nav>
+</nav>
+
+<section class="footer">
+    <p><i class="fa fa-lock" style="margin-right: 10px;"></i>bibook.com</p>
+</section>
+<script src="bookingpage.js"></script>
+<script src="headerMenu.js"></script>
+<script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+</html>

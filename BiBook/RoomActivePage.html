@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiBook</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BiBookCSS.css">
+
+    <!-- Added Icon Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #FFDC90;">
+
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="BiBookMainPage.html"><img src="./picture/bibooklogo.png" alt=""></a>
+            </div>
+            
+        </nav>
+    </section>
+
+    <div class="roomactivepage">
+        <section class="roomactivepage-container1">
+            <p>Ruangan Terpesan</p>
+        </section>
+
+        <section class="roomactivepage-container2">
+            <a href="#"><label><span class="active">Aktif</span></label></a>
+            <a href="./OrderHistoryPage.html"><label><span>Daftar Pemesanan</span></label></a>
+        </section>
+
+        <section class="roomactivepage-container3">
+            <table class="roomactivepage-container3-title" id="dataroom">
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Waktu</th>
+                    <th>Lantai</th>
+                    <th>Ruangan <p>(fasilitas)</p></th>
+                    <th>Ket</th>
+                </tr>
+
+                <tr>
+                    <th id="date"></th>
+                    <th id="time"></th>
+                    <th id="floor"></th>
+                    <th id="roomfac"></th>
+                    <th id="ket"><label><input type="radio"id="active" name="checkin"><span></span></label></th>
+                </tr>
+
+
+            </table>
+        </section>
+    </div>
+
+
+</body>
+
+<div class="hide" id="hide"></div>
+<div class="header-toggle"onclick="toggleMenu(this); toggleBar(this); dark(this)">
+    <div class="bar1" ></div>
+    <div class="bar2"></div>
+    <div class="bar3" ></div>
+</div>  
+<nav class="nav_menu" id="nmenu">
+    <nav class="nav_content">
+        <div class="navi">
+            <ul class="nav_list">
+                <a href="./BiBookMainPage.html"><li class="nav-item">Beranda</li></a>
+                <a href="./BookingPage.html"><li class="nav-item">Pinjam Ruangan</li></a>
+                <a href="./OrderHistoryPage.html"><li class="nav-item">Riwayat Pinjaman</li></a>
+                <a href="./ProfilePage.html"><li class="nav-item">Akun</li></a>
+            </ul>
+        </div>
+        
+    </nav>
+</nav>
+
+<section class="footer">
+    <p><i class="fa fa-lock" style="margin-right: 10px;"></i>bibook.com</p>
+</section>
+<script src="RoomActivePage.js"></script>
+<script src="headerMenu.js"></script>
+<script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiBook</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BiBookCSS.css">
+
+    <!-- Added Icon Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #FFDC90;">
+    
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="BiBookMainPage.html"><img src="./picture/bibooklogo.png" alt=""></a>
+            </div>
+            
+        </nav>
+    </section>
+
+    <div class="profilepage">
+        <section class="profilepage-container1">
+            <div class="profiledesc">
+                <img src="./picture/profile.png">
+            </div>
+
+            <div class="profiledesc">
+                <p class="name">Full Name...</p>
+                <p class="nim">2501998877</p>
+            </div>
+        </section>
+
+        <section class="profilepage-container2">
+            <p style="border-bottom: 2px solid white; font-weight: 800; font-size: 25px;">Pengaturan Akun</p>
+            <a href="#">Informasi Pribadi</a>
+            <p></p>
+            <a href="./OrderHistoryPage.html">Riwayat Pemesanan</a>
+        </section>
+        
+        <button onclick="window.location.href='./BiBookLogin.html'">Keluar</button>
+    </div>
+    
+</body>
+<div class="hide" id="hide"></div>
+<div class="header-toggle"onclick="toggleMenu(this); toggleBar(this); dark(this)">
+    <div class="bar1" ></div>
+    <div class="bar2"></div>
+    <div class="bar3" ></div>
+</div>  
+<nav class="nav_menu" id="nmenu">
+    <nav class="nav_content">
+        <div class="navi">
+            <ul class="nav_list">
+                <a href="./BiBookMainPage.html"><li class="nav-item">Beranda</li></a>
+                <a href="./BookingPage.html"><li class="nav-item">Pinjam Ruangan</li></a>
+                <a href="./OrderHistoryPage.html"><li class="nav-item">Riwayat Pinjaman</li></a>
+                <a href="./ProfilePage.html"><li class="nav-item">Akun</li></a>
+            </ul>
+        </div>
+        
+    </nav>
+</nav>
+
+<section class="footer">
+    <p><i class="fa fa-lock" style="margin-right: 10px;"></i>bibook.com</p>
+</section>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiBook</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BiBookCSS.css">
+
+    <!-- Added Icon Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #487D70;">
+
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="BiBookMainPage.html"><img src="./picture/bibooklogo.png" alt=""></a>
+            </div>
+            
+        </nav>
+    </section>
+
+    <form action="" method="get" id="floor17" class="roompage">
+        <section class="roompage-container1">
+            <p>Lantai 17</p>
+        </section>
+
+        <section class="roompage-container2">
+            <img src="./picture/lt6.jpg">
+        </section>
+
+        <section class="roompage-container3">
+            <label><input type="radio"id="GOR" name="roomfloor17"><span>GOR</span></label>
+            <label><input type="radio"id="C0203" name="roomfloor17"><span>C0203</span></label>
+            <label><input type="radio"id="C0204" name="roomfloor17"><span>C0204</span></label>
+            <label><input type="radio"id="C0205" name="roomfloor17"><span>C0205</span></label>
+            <label><input type="radio"id="C0206" name="roomfloor17"><span>C0206</span></label>
+            <label><input type="radio"id="C0207" name="roomfloor17"><span>C0207</span></label>
+            <label><input type="radio"id="C0209" name="roomfloor17"><span>C0209</span></label>
+            <label><input type="radio"id="C0210" name="roomfloor17"><span>C0210</span></label>
+            <label><input type="radio"id="C0212" name="roomfloor17"><span>C0212</span></label>
+            <label><input type="radio"id="B0201" name="roomfloor17"><span>B0201</span></label>
+            <label><input type="radio"id="amphitheater" name="roomfloor17"><span>Amphi Theater</span></label>
+        </section>
+
+        <button type="submit">Pilih Lantai</button>
+        <div class="errorbox">
+            <p id="error" class="errorstyle"></p>
+        </div>
+    </form>
+
+
+</body>
+
+<div class="hide" id="hide"></div>
+<div class="header-toggle"onclick="toggleMenu(this); toggleBar(this); dark(this)">
+    <div class="bar1" ></div>
+    <div class="bar2"></div>
+    <div class="bar3" ></div>
+</div>  
+<nav class="nav_menu" id="nmenu">
+    <nav class="nav_content">
+        <div class="navi">
+            <ul class="nav_list">
+                <a href="./BiBookMainPage.html"><li class="nav-item">Beranda</li></a>
+                <a href="./BookingPage.html"><li class="nav-item">Pinjam Ruangan</li></a>
+                <a href="./OrderHistoryPage.html"><li class="nav-item">Riwayat Pinjaman</li></a>
+                <a href="./ProfilePage.html"><li class="nav-item">Akun</li></a>
+            </ul>
+        </div>
+        
+    </nav>
+</nav>
+
+<section class="footer">
+    <p><i class="fa fa-lock" style="margin-right: 10px;"></i>bibook.com</p>
+</section>
+
+<script src="floor17.js"></script>
+<script src="headerMenu.js"></script>
+<script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+</html>

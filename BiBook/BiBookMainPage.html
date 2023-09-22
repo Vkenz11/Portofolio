@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiBook</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BiBookCSS.css">
+
+    <!-- Added Icon Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #487D70;">
+
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="BiBookMainPage.html"><img src="./picture/bibooklogo.png" alt=""></a>
+            </div>
+            
+        </nav>
+    </section>
+
+    <div class="mainpage">
+        <section class="mainpage-container1">
+            <img src="./picture/mainpage1.png">
+        </section>
+    
+        <section class="mainpage-container2">
+            <h1>
+                Binusian Booking
+            </h1>
+
+            <p>
+                Software berbasis web yang dapat digunakan oleh BINUSIAN, 
+                utamanya anggota atau aktivis HIMJUR dan UKM untuk meminjam 
+                ruangan di kampus dengan fitur melihat ruang yang kosong, 
+                durasi pemakaian, approval langsung oleh SSO dan BM, dan 
+                uga peminjaman fasilitas tambahan seperti mic dan kamera 
+                streaming.
+            </p>
+        </section>
+
+        <section class="mainpage-container3">
+            <div class="mainpage-container3-hover">
+                <input type="image" src="./picture/mainpage2.png">
+            </div>
+            <button onclick="window.location='./BookingPage.html'">
+                Pesan Sekarang
+            </button>
+        </section>
+
+        <section class="mainpage-container4">
+            <div class="mySlides">
+                <img src="./picture/gor.png" class="slidespic">
+                <div class="alternativetext">
+                    GOR
+                </div>
+    
+            </div>
+    
+            <div class="mySlides">
+                <img src="./picture/auditorium.png" class="slidespic">
+                <div class="alternativetext">
+                    Auditorium
+                </div>
+    
+            </div>
+    
+            <div class="mySlides">
+                <img src="./picture/lab komputer.png" class="slidespic">
+                <div class="alternativetext">
+                    Lab Komputer
+                </div>
+    
+            </div>
+    
+            <div class="mySlides">
+                <img src="./picture/amfitheater.png" style="width: 100%; height:70%">
+                <div class="alternativetext">
+                    Amfit Theater
+                </div>
+    
+            </div>
+    
+            <button class="leftarrow" onclick="plusSlide(-1)">&#10094</button>
+            <button class="rightarrow" onclick="plusSlide(1)">&#10095</button>
+        </section>
+    </div>
+</body>
+
+<section class="footer">
+    <p><i class="fa fa-lock" style="margin-right: 10px;"></i>bibook.com</p>
+</section>
+
+<div class="hide" id="hide"></div>
+<div class="header-toggle"onclick="toggleMenu(this); toggleBar(this); dark(this)">
+    <div class="bar1" ></div>
+    <div class="bar2"></div>
+    <div class="bar3" ></div>
+</div>  
+<nav class="nav_menu" id="nmenu">
+    <nav class="nav_content">
+        <div class="navi">
+            <ul class="nav_list">
+                <a href="./BiBookMainPage.html"><li class="nav-item">Beranda</li></a>
+                <a href="./BookingPage.html"><li class="nav-item">Pinjam Ruangan</li></a>
+                <a href="./OrderHistoryPage.html"><li class="nav-item">Riwayat Pinjaman</li></a>
+                <a href="./ProfilePage.html"><li class="nav-item">Akun</li></a>
+            </ul>
+        </div>
+        
+    </nav>
+</nav>
+
+<script src="mySlides.js"></script>
+<script src="headerMenu.js"></script>
+<script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+</html>

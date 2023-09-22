@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiBook</title>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="BiBookCSS.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #487D70;">
+    <div class="register-container">
+        <div class="register-logo-container">
+            <img src="./picture/bibooklogo.png" class="register-logo">
+        </div>
+
+        <form action="" method="get" id="registerform">
+            <div class="register-form-container">
+                <div class="register-inputbox">
+                    <input type="text" id="nim"
+                    name="nim" placeholder="NIM">
+
+                    <p></p>
+
+                    <input type="text" id="password"
+                    name="password" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="errorbox">
+                <p id="error" class="errorstyle"></p>
+            </div>
+            
+            <button type="submit" class="register-btn">Login</button>
+            
+        </form>
+    </div>
+</body>
+
+<section class="footer">
+    <p><i class="fa fa-lock" style="margin-right: 10px;"></i>bibook.com</p>
+</section>
+<script src="csvparse.js"></script>
+<script src="BiBookLoginJS.js"></script>
+<script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
+</html>
